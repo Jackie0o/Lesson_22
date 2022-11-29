@@ -1,0 +1,272 @@
+/* ====================== Connect the Lato font from Google fonts ==========*/
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+
+/* ====================== CCS Properties Home Work=============================== */
+html,
+body {
+	scroll-behavior: smooth;
+}
+body {
+	/* Default value */
+	font-family: "Lato", sans-serif;
+	font-family: 'Inconsolata', monospace;
+	color: #424551;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	position: relative;
+	min-height: 100%;
+}
+/* Confining container */
+[class*="__container"] {
+	max-width: 1440px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+/* ======================HEADER====================== */
+.header {
+	position: fixed;
+	width: 100%;
+	left: 0;
+	top: 0;
+	background: linear-gradient(
+		to right, #072142, #8c2b7a 42%, #ff4d5a);
+	z-index: 100;
+}
+.header__container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px 15px;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 1.5rem;
+	color: #fff;
+}
+.menu__list {
+	display: flex;
+	gap: 60px;
+}
+.header__logo,
+.menu__item {
+	transition: all 0.3s ease 0s;
+}
+.header__logo:hover,
+.menu__item:hover {
+	color: #cef75c;
+}
+
+/* ======================MAIN====================== */
+main {
+	flex: 1 1 auto;
+}
+.page {
+	background: #000;
+	color: #fff;
+	font-size: 1.5rem;
+	line-height: 1.5;
+	padding: 0 0 80px 0;
+}
+.homework h2 {
+	padding: 0 0 0 70px;
+	position: relative;
+}
+.homework h2::before {
+	content: "";
+	background: url(../img/icons/js.png) no-repeat;
+	position: absolute;
+	top: -12px;
+	left: 0px;
+	width: 50px;
+	height: 50px;
+}
+.title-block:not(:last-child) {
+	margin: 0 0 20px 0;
+}
+.basics,
+.variables,
+.data-types {
+	padding: 100px 0 0 0;
+}
+.working-out:not(:last-child) {
+	margin: 0 0 35px 0;
+}
+.working-out__title {
+	font-style: italic;
+	color: gray;
+}
+.working-out__title {
+	position: relative;
+}
+.data-types .working-out__title--fourth::after,
+.data-types .working-out__title--first::after,
+.variables .working-out__title--five::after,
+.variables .working-out__title--fourth::after,
+.variables .working-out__title--third::after,
+.variables .working-out__title--second::after,
+.basics .working-out__title--first::after,
+.basics .working-out__title--second::after {
+	content: "";
+	background: url(../img/icons/ok.png) no-repeat;
+	position: absolute;
+	top: -8px;
+	left: 180px;
+	width: 40px;
+	height: 40px;
+}
+.data-types .working-out__title--first::before,
+.variables .working-out__title--third::before,
+.variables .working-out__title--second::before,
+.basics .working-out__title--first::before,
+.basics .working-out__title--second::before {
+	content: "";
+	background: url(../img/icons/monocle.png) no-repeat;
+	position: absolute;
+	top: -6px;
+	left: 235px;
+	width: 40px;
+	height: 40px;
+}
+.data-types .working-out__title--second::after,
+.variables .working-out__title--first::after,
+.working-out__title--fourth::after, 
+.working-out__title--third::after {
+	content: "";
+	background: url(../img/icons/angry.png) no-repeat;
+	position: absolute;
+	top: -6px;
+	left: 185px;
+	width: 40px;
+	height: 40px;
+}
+.working-out__task span + span + span + span, 
+.working-out__task span {
+	color: #ff4d5a;
+}
+.basics .working-out__task--third {
+	display: flex;
+	gap: 25px;
+}
+.working-out__task span + span {
+	color: gray;
+}
+.working-out__task span + span +span {
+	color: #cef75c;
+}
+.working-out__answer span {
+	text-decoration: underline;
+}
+
+.variables .working-out__task--first {
+	display: flex;
+	gap: 25px;
+}
+.variables .working-out__task span {
+	color: gray;
+}
+.variables .working-out__task--five p:nth-child(2) span + span,
+.variables .working-out__task span + span {
+	color: #ff4d5a;
+}
+.variables .working-out__task--five span + span,
+.variables .working-out__task--five span + span + span + span,
+.variables .working-out__task span + span + span + span,
+.variables .working-out__task span + span + span {
+	color: #cef75c;
+}
+.variables .working-out__task--five p:last-of-type span + span + span + span,
+.variables .working-out__task--five p:last-of-type span,
+.variables .working-out__task--five span + span + span {
+	color: rgb(110, 110, 255);
+}
+.variables .working-out__task--five p:first-of-type + p {
+	padding: 0 0 0 40px;
+}
+.variables .working-out__task--five p:last-of-type span + span + span + span + span,
+.variables .working-out__task--five p:last-of-type span + span,
+.variables .working-out__task--five p:nth-child(2) span + span + span,
+.variables .working-out__task--five p:nth-child(3) {
+	color: #cef75c;
+}
+.data-types .working-out__task--fourth p:nth-child(2),
+.data-types .working-out__task--third p:nth-child(2),
+.data-types .working-out__task--second p:nth-child(2),
+.data-types .working-out__task span {
+	color: gray;
+}
+.data-types .working-out__task--fourth p:nth-child(3) span + span + span,
+.data-types .working-out__task--fourth p:nth-child(3) span,
+.data-types .working-out__task--third p:nth-child(3) span + span + span,
+.data-types .working-out__task--third p:nth-child(3) span,
+.data-types .working-out__task--second p:nth-child(3) span,
+.data-types .working-out__task--second p:nth-child(3) span + span + span {
+	color: rgb(110, 110, 255);
+}
+.data-types .working-out__task span + span {
+	color: #ff4d5a;
+}
+.data-types .working-out__task--fourth p:nth-child(3) span + span,
+.data-types .working-out__task--fourth p:nth-child(3) span + span + span + span,
+.data-types .working-out__task--third p:nth-child(3) span + span,
+.data-types .working-out__task--third p:nth-child(3) span + span + span + span,
+.data-types .working-out__task--second p:nth-child(3) span + span,
+.data-types .working-out__task--second p:nth-child(3) span + span + span + span,
+.data-types .working-out__task span + span + span {
+	color: #cef75c;
+}
+/* ======================FOOTER====================== */
+.footer {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px 0;
+	gap: 15px;
+	background: linear-gradient(
+		to right,
+		#072142 0%,
+		#8c2b7a 25%,
+		#ff4d5a 50%,
+		#ff4d5a 65%,
+		#8c2b7a 80%,
+		#072142 100%);
+	background-size: 300%;
+	background-position: left;
+	color: #fff;
+	transition: all 1.5s ease 0s;
+}
+.footer:hover {
+	background-position: right;
+}
+.footer__title {
+	font-size: 25px;
+	position: relative;
+	z-index: 2;
+}
+.footer__link {
+	flex: 0 1 55px;
+}
+.footer__link img{
+	max-width: 100%;
+	position: relative;
+	z-index: 2;
+}
+.footer__wave {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	line-height: 0;
+}
+.footer__wave svg {
+	position: relative;
+	display: block;
+	width: calc(130% + 1.3px);
+	height: 39px;
+}
+.footer__wave .footer__fill {
+	fill: #000;
+}

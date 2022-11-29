@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="uk">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="shortcut icon" href="favicon.ico">
+		<title>Lesson 22</title>
+	</head>
+	<body>
+		<div class="wrapper" id="wrapper">
+			<!--header starts-->
+			<header class="header">
+				<div class="header__container">
+					<div class="header__logo"><a href="#wrapper">Jackie</a></div>
+					<div class="header__menu menu">
+						<ul class="menu__list">
+							<li class="menu__item"><a class="menu__link" href="#basics">Основи синтаксису JS</a></li>
+							<li class="menu__item"><a class="menu__link" href="#variables">Змінні у JS</a></li>
+							<li class="menu__item"><a class="menu__link" href="#data-types">Типи даних JS</a></li>
+						</ul>
+					</div>
+				</div>
+			</header>
+			<!--header ends-->
+			<!--main starts-->
+			<main class="page">
+				<div class="page__container">
+					<div class="page__homework homework">
+						<div class="homework__basics basics" id="basics">
+							<h2 class="basics__title title-block">
+								Основи синтаксису JAVASCRIPT. Структура коду. Інструкції. Режим use strict. Уроки JAVASCRIPT з нуля.
+							</h2>
+							<div class="basics__working-out working-out">
+								<div class="working-out__title working-out__title--first">// Варіант №1</div>
+								<div class="working-out__task"><span>console</span>.<span>log</span>(<span>'Вчимо JS'</span>)</div>
+								<div class="working-out__answer">
+									<span>Відповідь: Помилки в браузері не буде.</span> Але краще добавляти ";" в кінці інструкції, так як може виникнути ситуація, що людини продовже писати код та в майбутньому при стисканні коду може виникнути помилка. Краще думати на перед.
+								</div>
+							</div>
+							<div class="basics__working-out working-out">
+								<div class="working-out__title working-out__title--second">// Варіант №2</div>
+								<div class="working-out__task">
+									<p><span>console</span>.<span>log</span>(<span>'JS'</span>)</p>
+									<p><span>console</span>.<span>log</span>(<span>'Вчимо'</span>)</p>
+								</div>
+								<div class="working-out__answer">
+									<span>Відповідь: Помилки в браузері не буде.</span> Але краще добавляти ";" в кінці інструкції, так як може виникнути ситуація, що в майбутньому при стисканні коду може виникнути помилка. Краще думати на перед.
+								</div>
+							</div>
+							<div class="basics__working-out working-out">
+								<div class="working-out__title working-out__title--third">// Варіант №3</div>
+								<div class="working-out__task working-out__task--third">
+									<p>
+										<span>console</span>.<span>log</span>(<span>'Вчимо'</span>)
+									</p>
+									<p>
+										<span>console</span>.<span>log</span>(<span>'JS'</span>)
+									</p>
+								</div>
+								<div class="working-out__answer">
+									<span>Відповідь: в браузері видасть помилку.</span> У першої інструкції в кінці нема крапки з комою ";", тобто вона незачинена і зразу починається (на тому же рядку) нова інструкції, що є помилкою.
+									Після кожнох інструкції треба ставити крапку з комою ";".
+								</div>
+							</div>
+							<div class="basics__working-out working-out">
+								<div class="working-out__title working-out__title--fourth">// Варіант №4</div>
+								<div class="working-out__task">
+									<p><span>console</span>.<span>log</span>(<span>'Вчимо</span>)<span>;</span></p>
+									<p><span>console</span>.<span>log</span>(<span>'JS'</span>);</p>
+								</div>
+								<div class="working-out__answer">
+									<span>Відповідь: в браузері видасть помилку.</span>  Лапки в першій інструкції повині бути закриті.
+								</div>
+							</div>
+						</div>
+						<div class="homework__variables variables" id="variables">
+							<h2 class="variables__title title-block">
+								Змінні у JAVASCRIPT. Константи. Ключові слова LET CONST VAR. Уроки JAVASCRIPT з нуля 2020
+							</h2>
+							<div class="variables__working-out working-out">
+								<div class="working-out__title working-out__title--first">// Варіант №1</div>
+								<div class="working-out__task working-out__task--first">
+									<p><span>let</span> <span>user</span> = <span>'Вася'</span></p>
+									<p><span>let</span> <span>age</span> = <span>36</span></p>
+								</div>
+								<div class="working-out__answer">
+									<span>Відповідь: в браузері видасть помилку.</span> У першій об'яві зміної в кінці нема крапки з комою ";", тобто вона незачинена і зразу починається (на тому же рядку) нова об'ява зміної, що є помилкою.
+									Після кожної об'яви зміної треба ставити крапку з комою ";".
+								</div>
+							</div>
+							<div class="variables__working-out working-out">
+								<div class="working-out__title working-out__title--second">// Варіант №2</div>
+								<div class="working-out__task">
+									<p><span>let</span> <span>myage</span> = <span>36</span>;</p>
+								</div>
+								<div class="working-out__answer">
+									<span>Відповідь: Помилки в браузері не буде.</span> Але це помилка згідно стилю надання імен до змін lowerCamelCase. Правильно myAge.
+								</div>
+							</div>
+							<div class="variables__working-out working-out">
+								<div class="working-out__title working-out__title--third">// Варіант №3</div>
+								<div class="working-out__task">
+									<p><span>const</span> <span>BLOCK_SIZE</span> = <span>14</span> + <span>50</span>;</p>
+								</div>
+								<div class="working-out__answer">
+									<span>Відповідь: Помилки в браузері не буде.</span> Але імена констант, чиї значення відомі заздалегідь, прийнято записувати у верхньому регістрі, а слова розділяти нижнім підкресленням. Значення константи не відомо заздалегідь. Її треба вирохувати. 
+								</div>
+							</div>
+							<div class="variables__working-out working-out">
+								<div class="working-out__title working-out__title--fourth">// Варіант №4</div>
+								<div class="working-out__task">
+									<p><span>const</span> <span>BLOCK_HEIGHT</span> = <span>100</span>;</p>
+								</div>
+								<div class="working-out__answer">
+									<span>Відповідь: Помилки в браузері не буде.</span> Імена констант, чиї значення відомі заздалегідь, прийнято записувати у верхньому регістрі, а слова розділяти нижнім підкресленням. Значення константи BLOCK_HEIGHT відомо заздалегідь. Все вірно. 
+								</div>
+							</div>
+							<div class="variables__working-out working-out">
+								<div class="working-out__title working-out__title--five">// Варіант №5</div>
+								<div class="working-out__task working-out__task--five">
+									<p><span>if</span> <span>(</span><span>true</span><span>)</span> <span>{</span></p>
+									<p><span>var</span> <span>size</span> = <span>15</span>;</p> 
+									<p>}</p>
+									<p><span>console</span>.<span>log</span><span>(</span><span>size</span><span>)</span>;</p>
+								</div>
+								<div class="working-out__answer">
+									<span>Відповідь: В Console видасть число 15.</span> Так змінна "size" об'явленна в блоці if і начебто по правилам області видимості змінних команда "console.log(size)" не має видати значення, але це спеціфіка об'яви змінної через "var" і команда "console.log(size)" видасть значення. Все вірно. 
+								</div>
+							</div>
+						</div>
+						<div class="homework__data-types data-types" id="data-types">
+							<h2 class="data-types__title title-block">
+								Типи даних JAVASCRIPT. Null String Undefined Boolean Number та інші. Уроки JAVASCRIPT з нуля 2020
+							</h2>
+							<div class="data-types__working-out working-out">
+								<div class="working-out__title working-out__title--first">// Варіант №1</div>
+								<div class="working-out__task working-out__task--first">
+									<p><span>let</span> <span>userAge</span> = <span>36</span> ;</p>
+									<p><span>let</span> <span>userInfo</span> = <span>"Фрілансер ${userAge}"</span>;</p>
+								</div>
+								<div class="working-out__answer">
+									<span>Відповідь: Якщо треба вивести в зміну userInfo значення - Фрілансер ${userAge}, то все вірно</span>. 
+									Але, мені здається тут задумка використовувати значення змінної userAge в змінній userInfo, тоді це не вірно. Правильно використовувати
+									зворотні лапки (``). Вірно `Фрілансер ${userAge}`;.
+								</div>
+							</div>
+							<div class="data-types__working-out working-out">
+								<div class="working-out__title working-out__title--second">// Варіант №2</div>
+								<div class="working-out__task working-out__task--second">
+									<p><span>let</span> <span>userHeight</span> = <span>145</span> / <span>0</span>;</p>
+									<p>// Повернеться значення NaN</p>
+									<p><span>console</span>.<span>log(</span><span>userHeight</span><span>)</span>;</p>
+								</div>
+								<div class="working-out__answer">
+									<span>Відповідь: В Console видасть значення Infinity</span>. Значення NaN повертається, коли не можливе математичне обчислення. 
+									Так в школі нас вчили, що на 0 не можно ділити, але в JS можно =). Це не є помилкою, просто число буде нескінчене, тобто Infinity.
+								</div>
+							</div>
+							<div class="data-types__working-out working-out">
+								<div class="working-out__title working-out__title--third">// Варіант №3</div>
+								<div class="working-out__task working-out__task--third">
+									<p><span>let</span> <span>userName</span>;</p>
+									<p>// Повернеться тип даних Null</p>
+									<p><span>console</span>.<span>log(<span>typeof</span> </span><span>userName</span><span>)</span>;</p>
+								</div>
+								<div class="working-out__answer">
+									<span>Відповідь: В Console видасть значення Undefined</span>. Значення Null представляє відсутність будь-якого об'єктного значення. Це значення, яке ми привласнюємо змінній. Якщо змінна об'явленна і до неї не привласнили значення, то тоді тип данних буде Undefined - не визначено. 
+								</div>
+							</div>
+							<div class="data-types__working-out working-out">
+								<div class="working-out__title working-out__title--fourth">// Варіант №4</div>
+								<div class="working-out__task working-out__task--fourth">
+									<p><span>let</span> <span>userSize</span> = <span>"45"</span> / <span>"8"</span>;</p>
+									<p>// Повернеться тип даних Number</p>
+									<p><span>console</span>.<span>log(<span>typeof</span> </span><span>userSize</span><span>)</span>;</p>
+								</div>
+								<div class="working-out__answer">
+									<span>Відповідь: Все вірно, в Console видасть значення Number</span>. Так ми бачимо, що строка ділиться на строку. Але оператор "/" переводить строки в цифри (якщо в строках тільки цифри, в іншому випадку буде NaN) і ми отримаємо, що 45 ділиться на 8. Це дорівнює 5.625 , що є числом - Number. 
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+			<!--main ends-->
+			<!--footer starts-->
+			<footer class="footer">
+				<h2 class="footer__title">
+					The site was created by Jackie
+				</h2>
+				<a class="footer__link"
+					href="https://www.instagram.com/yevgeniyslobodianuk/"
+					target="_blank"
+					><img src="img/instagram.png" alt="My Instagram">
+				</a>
+				<div class="footer__wave">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+						 <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,
+						 168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,
+						 146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" 
+						 class="footer__fill"></path>
+					</svg>
+			  </div>
+			</footer>
+			<!--footer ends-->
+		</div>
+		<script src="js/script.js"></script>
+  </body>
+</html>
