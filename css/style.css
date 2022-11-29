@@ -195,6 +195,7 @@ main {
 .data-types .working-out__task--second p:nth-child(2),
 .data-types .working-out__task span {
 	color: gray;
+	font-style: italic;
 }
 .data-types .working-out__task--fourth p:nth-child(3) span + span + span,
 .data-types .working-out__task--fourth p:nth-child(3) span,
