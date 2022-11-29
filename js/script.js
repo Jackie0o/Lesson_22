@@ -12,23 +12,23 @@ console.log ('JS')
 console.log ('Вчимо')
 
 // Варіант № 3
-console.log ('Вчимо') console.log ('JS')
+// console.log ('Вчимо') console.log ('JS')
 
 // Варіант № 4
-console.log ('Вчимо);
+// console.log ('Вчимо);
 console.log ('JS');
 
 // ? Змінні у JAVASCRIPT. Константи. Ключові слова LET CONST VAR. Уроки JAVASCRIPT з нуля 2020
 
-let userEyeColor;
-let user;
-let userName;
-userName = 'Вася';
-user = userName;
-console.log(user);
+// let userEyeColor;
+// let user;
+// let userName;
+// userName = 'Вася';
+// user = userName;
+// console.log(user);
 
 // Варіант № 1
-let user = 'Вася' let age = 36
+// let user = 'Вася' let age = 36
 
 // Варіант № 2
 let myage = 36;
