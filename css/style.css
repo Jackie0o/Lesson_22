@@ -190,6 +190,12 @@ main {
 .variables .working-out__task--five p:nth-child(3) {
 	color: #cef75c;
 }
+.data-types .working-out__task p:nth-child(2){
+	font-style: italic;
+}
+.data-types .working-out__task--first p:nth-child(2){
+	font-style: normal;
+}
 .data-types .working-out__task--fourth p:nth-child(2),
 .data-types .working-out__task--third p:nth-child(2),
 .data-types .working-out__task--second p:nth-child(2),
